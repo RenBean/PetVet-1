@@ -5,5 +5,16 @@
   </head>
   <body>
   $END$
+  <br>
+  <a href="mvc_cust/addNewOwner">Add New Owner</a><br>
+  <a href="mvc_cust/addNewPet">Add New Pet</a><br>
+  <a href="mvc_cust/editOwner">Edit Owner</a><br>
+  <a href="mvc_cust/editPet">Edit Pet</a><br>
+  <a href="mvc_cust/viewAllOwners">View All Owner</a><br>
+  <a href="mvc_cust/viewAllPets">View All Pets</a><br>
+  <a href="mvc_cust/viewOwners">View Owners</a><br>
+  <a href="mvc_cust/viewPets">View Pets</a><br>
+
+
   </body>
 </html>

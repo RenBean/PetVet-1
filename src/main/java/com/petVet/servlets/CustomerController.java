@@ -1,5 +1,6 @@
 package com.petVet.servlets;
 
+import com.petVet.data.DataCache;
 import com.petVet.entities.Owner;
 
 import javax.servlet.RequestDispatcher;
@@ -22,6 +23,24 @@ public class CustomerController extends HttpServlet {
         String jspName = uri.substring(uri.lastIndexOf('/')+1);
         System.out.println("JSP Name: "+jspName);
 
+        if(jspName.equalsIgnoreCase("viewAllPets")) {
+            // TODO: do something here
+        } else if(jspName.equalsIgnoreCase("viewPet")) {
+            // TODO: do something here
+        } else if(jspName.equalsIgnoreCase("addNewPet")) {
+            // TODO: do something here
+        } else if(jspName.equalsIgnoreCase("editPet")) {
+            // TODO: do something here
+        } else if(jspName.equalsIgnoreCase("viewAllOwners")) {
+
+        } else if(jspName.equalsIgnoreCase("viewOwner")) {
+            // TODO: do something here
+        } else if(jspName.equalsIgnoreCase("addNewOwner")) {
+            // TODO: do something here
+        } else if(jspName.equalsIgnoreCase("editOwner")) {
+            // TODO: do something here
+        }
+        // ... add the if-else logic for the owner views...
 
         RequestDispatcher view = request.getRequestDispatcher("/customers/"+jspName+".jsp");
         view.forward(request, response);
