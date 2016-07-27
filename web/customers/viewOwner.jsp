@@ -15,7 +15,7 @@ View Owner
 <br><br>
 <table>
     <tr>
-        <td>ID:</td>
+        <td>Owner ID:</td>
         <td><c:out value="${owner.ownerId}" /></td>
     </tr>
     <tr>
