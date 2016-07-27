@@ -6,7 +6,7 @@ import com.petVet.entities.Pet;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class DataCache {
+public class DataCache { //singleton
     private static DataCache instance = null;
     private static HashMap<String, Pet> petsHashMap;
     private static HashMap<String, Owner> ownersHashMap;

@@ -32,9 +32,14 @@ public class CustomerController extends HttpServlet {
         } else if(jspName.equalsIgnoreCase("editPet")) {
             // TODO: do something here
         } else if(jspName.equalsIgnoreCase("viewAllOwners")) {
+            ArrayList<Owner> owners = DataCache.getOwners();
+            request.setAttribute("owners",owners);
 
         } else if(jspName.equalsIgnoreCase("viewOwner")) {
-            // TODO: do something here
+            String ownerId = request.getParameter("ownerid");
+            Owner owner = DataCache.getOwner(ownerId);
+            request.setAttribute("owner",owner);
+
         } else if(jspName.equalsIgnoreCase("addNewOwner")) {
             // TODO: do something here
         } else if(jspName.equalsIgnoreCase("editOwner")) {
