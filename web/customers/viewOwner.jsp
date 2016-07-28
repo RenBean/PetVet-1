@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Ari
@@ -39,6 +40,8 @@ View Owner
 <a href="/">HOME</a>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="/mvc_cust/viewAllOwners">All Owners</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/mvc_cust/editOwner?ownerid=<c:out value="${owner.ownerId}" />">Edit Owner</a>
 
 </body>
 </html>

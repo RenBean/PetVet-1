@@ -31,8 +31,12 @@
             <td>Pet Owner:</td>
             <td><c:out value="${pet.ownerId}" /></td>
         </tr>
-
-
+        <br><br>
+        <a href="/">HOME</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/mvc_cust/viewAllPets">All Pets</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/mvc_cust/editPet?petid=<c:out value="${pet.petId}" />">Edit Pet</a>
     </table>
 
 

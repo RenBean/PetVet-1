@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Ari
@@ -12,5 +13,15 @@
 </head>
 <body>
     Add New Pet
+    <form name="newPetForm" method="POST" action="/mvc_cust/saveNewPet">
+        Pet Name: <input type="text" name="name" /><br>
+        Pet Type <select name="pettype">
+        <c:forEach var="ptype" items="${petTypes}">
+            <option value="<c:out value="${ptype}"/>"><c:out value="${ptype}"/></option>
+            </c:forEach>
+        </select><br>
+        Owner ID: <input type="text" name="ownerid" /><br>
+        <input type="submit">
+    </form>
 </body>
 </html>
